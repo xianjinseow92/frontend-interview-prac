@@ -13,11 +13,14 @@ const routes: IRoute[] = [
     {
         path: paths.HOME,
         component: <MainPage/>
-    },
+    }
+];
+
+export const fallBackRoutes: IRoute[] = [
     {
         path: paths.NOT_FOUND,
         component: <NotFound/>
     }
-];
+]
 
 export default routes;

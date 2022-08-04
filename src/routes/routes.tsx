@@ -8,13 +8,18 @@ import { notMainRoutes } from "helpers/helpers";
 
 export const paths = {
     HOME: "/home",
-    NOT_FOUND: "/not-found"
+    NOT_FOUND: "/not-found",
+    THROTTLE: "/throttle"
 }
 
 const routes: IRoute[] = [
     {
         path: paths.HOME,
         component: <MainPage/>
+    },
+    {
+        path: paths.THROTTLE,
+        component: <div>Dummy throttle test</div>
     }
 ];
 
@@ -25,6 +30,6 @@ export const fallBackRoutes: IRoute[] = [
     }
 ]
 
-export const interviewQuestionRoutes: IRoute[] = notMainRoutes();
+export const interviewQuestionRoutes: IRoute[] = notMainRoutes(routes);
 
 export default routes;

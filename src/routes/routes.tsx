@@ -2,6 +2,7 @@ import { IRoute } from "types/types";
 
 // Components
 import MainPage from "pages/MainPage";
+import NotFound from "pages/NotFound/NotFound";
 
 export const paths = {
     HOME: "/home",
@@ -10,8 +11,12 @@ export const paths = {
 
 const routes: IRoute[] = [
     {
-        path: "/home",
+        path: paths.HOME,
         component: <MainPage/>
+    },
+    {
+        path: paths.NOT_FOUND,
+        component: <NotFound/>
     }
 ];
 

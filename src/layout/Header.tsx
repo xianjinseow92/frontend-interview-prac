@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 
 const TopNavBar = () => {
   const navigate = useNavigate();
-  const homePage: string = get(find(routes, {path: paths.HOME}), paths.HOME, "");
+  const homePage: string = get(find(routes, {path: paths.HOME}), "path", "");
 
   return (
     <AppBar position="static">

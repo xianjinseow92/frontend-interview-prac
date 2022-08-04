@@ -3,14 +3,14 @@ import Toolbar from "@mui/material/Toolbar";
 import HomeIcon from "@mui/icons-material/Home";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import routes from "routes/routes";
+import routes, { paths } from "routes/routes";
 import find from "lodash/find";
 import get from "lodash/get";
 import { useNavigate } from "react-router-dom";
 
 const TopNavBar = () => {
   const navigate = useNavigate();
-  const homePage: string | undefined = get(find(routes, {path: "/home"}), "path", "");
+  const homePage: string = get(find(routes, {path: paths.HOME}), paths.HOME, "");
 
   return (
     <AppBar position="static">

@@ -4,6 +4,8 @@ import { IRoute } from "types/types";
 import MainPage from "pages/MainPage";
 import NotFound from "pages/NotFound/NotFound";
 
+import { notMainRoutes } from "helpers/helpers";
+
 export const paths = {
     HOME: "/home",
     NOT_FOUND: "/not-found"
@@ -22,5 +24,7 @@ export const fallBackRoutes: IRoute[] = [
         component: <NotFound/>
     }
 ]
+
+export const interviewQuestionRoutes: IRoute[] = notMainRoutes();
 
 export default routes;

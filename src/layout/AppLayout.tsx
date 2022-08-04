@@ -13,7 +13,7 @@ const PageLayout = ({ children }: { children: any }) => {
       }}
     >
       <TopNavBar />
-      <Container sx={{ padding: "16px" }}>{children}</Container>
+      <Container sx={{ padding: "16px", height: "100%" }}>{children}</Container>
     </Box>
   );
 };

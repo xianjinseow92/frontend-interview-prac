@@ -8,8 +8,7 @@ const PageLayout = ({ children }: { children: any }) => {
       sx={{
         display: "flex",
         flexDirection: "column",
-        height: "100%",
-        backgroundColor: "green",
+        height: "100%"
       }}
     >
       <TopNavBar />
